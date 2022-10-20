@@ -4,7 +4,14 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -41,8 +48,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
 @Composable
+@Suppress("Compose function")
 fun HeroScreen(placeHolderItems: List<Hero>) {
     Surface(
         modifier = Modifier.fillMaxSize(), color = colorResource(id = R.color.grey_background)
@@ -81,6 +88,7 @@ fun HeroScreen(placeHolderItems: List<Hero>) {
 }
 
 @Composable
+@Suppress("Compose function")
 fun HeroCard(hero: Hero) {
     Column(
         modifier = Modifier
@@ -118,6 +126,7 @@ fun HeroCard(hero: Hero) {
 
 @Preview(showBackground = true)
 @Composable
+@Suppress("Compose function")
 fun PreviewHeroScreen() {
     MarvelAppTheme {
         HeroScreen(HeroRepository().getAllHeroes())
@@ -126,6 +135,7 @@ fun PreviewHeroScreen() {
 
 @Preview(showBackground = true)
 @Composable
+@Suppress("Compose function")
 fun ShowHeroCard() {
     MarvelAppTheme {
         HeroCard(Hero(0, "Captain America", R.drawable.captain_america_image_test))
