@@ -77,8 +77,8 @@ fun HeroScreen(placeHolderItems: List<Hero>) {
         LazyRow(
             modifier = Modifier
                 .fillMaxHeight()
-                .padding(bottom = 60.dp),
-            contentPadding = PaddingValues(4.dp)
+                .padding(bottom = 48.dp, top = 18.dp),
+            contentPadding = PaddingValues(12.dp)
         ) {
             items(placeHolderItems) { hero ->
                 HeroCard(hero = hero)
@@ -93,7 +93,7 @@ fun HeroCard(hero: Hero) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(all = 12.dp)
+            .padding(all = 8.dp)
     ) {
         Box(
             modifier = Modifier
