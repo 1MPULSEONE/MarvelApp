@@ -3,4 +3,5 @@
     /* MainActivity strings */
     <string name="marvel_logo_description">marvel logo</string>
     <string name="choose_your_hero">Choose your hero</string>
+    <string name="background_hero_image">Background hero image</string>
 </resources>

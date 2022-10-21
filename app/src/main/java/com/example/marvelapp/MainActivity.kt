@@ -107,7 +107,7 @@ fun HeroCard(hero: Hero) {
                     .width(345.dp)
                     .height(400.dp),
                 contentScale = ContentScale.Crop,
-                contentDescription = "12"
+                contentDescription = stringResource(id = R.string.background_hero_image)
             )
             Text(
                 text = hero.name,
